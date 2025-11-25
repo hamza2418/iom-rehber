@@ -7,6 +7,14 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
+    <div class="disclaimer-banner">
+      <div class="disclaimer-icon">⚠️</div>
+      <div class="disclaimer-text">
+        <strong>Önemli Uyarı:</strong> Bu site resmi bir kurum değildir. Topluluk tecrübelerine dayalı bilgilendirme amaçlıdır.
+        Hukuki tavsiye niteliği taşımaz. Resmi kaynaklardan teyit almanızı öneririz.
+      </div>
+    </div>
+
     <div class="hero">
       <h1>Almanya Aile Birleşimi Rehberi</h1>
       <p class="subtitle">IOM / FAP Süreci için Adım Adım Kılavuz</p>
@@ -36,6 +44,35 @@ import { RouterModule } from '@angular/router';
     </div>
   `,
   styles: [`
+    .disclaimer-banner {
+      background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+      border: 2px solid #d92424;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 4px 15px rgba(217, 36, 36, 0.1);
+    }
+
+    .disclaimer-icon {
+      font-size: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    .disclaimer-text {
+      flex: 1;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .disclaimer-text strong {
+      color: #d92424;
+      display: block;
+      margin-bottom: 5px;
+    }
+
     .hero { text-align: center; padding: 40px 0; }
     h1 { font-size: 2.5rem; color: #003366; margin-bottom: 10px; }
     .subtitle { font-size: 1.2rem; color: #666; margin-bottom: 50px; }
