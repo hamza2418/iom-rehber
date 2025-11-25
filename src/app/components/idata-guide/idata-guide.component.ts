@@ -317,6 +317,71 @@ import { CommonModule } from '@angular/common';
       border-left: 4px solid #28a745;
     }
     .tip-box strong { color: #28a745; }
+
+    @media (max-width: 768px) {
+      .idata-guide-container { padding: 10px; }
+
+      .header { margin-bottom: 25px; }
+      .header h2 { font-size: 1.5rem; }
+      .subtitle { font-size: 0.95rem; }
+
+      .idata-link {
+        display: block;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.95rem;
+      }
+
+      .step-item {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+
+      .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+      }
+
+      .step-content h3 { font-size: 1.1rem; }
+      .step-content p { font-size: 0.9rem; }
+
+      .highlight-box,
+      .important-box,
+      .result-box {
+        padding: 12px;
+        font-size: 0.9rem;
+      }
+
+      .important-box ul,
+      .form-info ul {
+        padding-left: 15px;
+      }
+
+      .email-body {
+        padding: 10px;
+        font-size: 0.8rem;
+      }
+
+      .info-section,
+      .tips-section {
+        margin-top: 30px;
+      }
+
+      .info-card {
+        padding: 15px;
+      }
+
+      .info-card h4 { font-size: 1rem; }
+
+      .tip-box {
+        padding: 12px;
+        font-size: 0.9rem;
+      }
+    }
   `]
 })
 export class IdataGuideComponent {}

@@ -85,6 +85,41 @@ import { RouterModule } from '@angular/router';
 
     .cta-section { background: #e8f4fd; padding: 40px; border-radius: 10px; display: inline-block; width: 100%; max-width: 600px; }
     .btn-lg { font-size: 1.1rem; padding: 15px 30px; margin-top: 15px; }
+
+    @media (max-width: 768px) {
+      .disclaimer-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+      }
+
+      .disclaimer-icon { font-size: 2rem; }
+      .disclaimer-text { font-size: 0.9rem; }
+
+      h1 { font-size: 1.8rem; }
+      .subtitle { font-size: 1rem; }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .stat-card { padding: 20px; }
+      .icon { font-size: 2.5rem; }
+
+      .cta-section {
+        padding: 20px;
+        max-width: 100%;
+      }
+
+      .btn-lg {
+        font-size: 1rem;
+        padding: 12px 24px;
+        display: block;
+        width: 100%;
+      }
+    }
   `]
 })
 export class HomeComponent {}

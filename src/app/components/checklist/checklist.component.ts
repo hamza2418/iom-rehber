@@ -55,6 +55,36 @@ import { ContentService, DocItem } from '../../services/content.service';
     .checkmark:after { content: ""; position: absolute; display: none; }
     .checkbox-container input:checked ~ .checkmark:after { display: block; }
     .checkbox-container .checkmark:after { left: 9px; top: 5px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; transform: rotate(45deg); }
+
+    @media (max-width: 768px) {
+      .checklist-container { padding: 0; }
+
+      h2 { font-size: 1.5rem; }
+
+      .alert { padding: 12px; font-size: 0.9rem; }
+
+      .category-group { margin-bottom: 30px; }
+      .cat-title { font-size: 1rem; }
+
+      .doc-item {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .checkbox-container { padding-left: 0; }
+      .checkmark { position: relative; display: inline-block; }
+
+      .doc-info { width: 100%; }
+      .doc-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .doc-info strong { font-size: 0.95rem; }
+      .doc-info p { font-size: 0.85rem; margin-top: 5px; }
+    }
   `]
 })
 export class ChecklistComponent implements OnInit {

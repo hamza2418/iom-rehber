@@ -163,8 +163,35 @@ import { CommonModule } from '@angular/common';
       .telegram-banner {
         flex-direction: column;
         text-align: center;
-        padding: 30px 20px;
+        padding: 25px 20px;
       }
+
+      .telegram-icon { font-size: 3rem; }
+      .telegram-content h3 { font-size: 1.4rem; }
+      .telegram-content p { font-size: 0.95rem; }
+      .telegram-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+
+      .document-tracking { padding: 20px 15px; }
+      .document-tracking h3 { font-size: 1.3rem; }
+
+      .contact-info-box {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .email-template-box { padding: 15px; }
+      .email-body { font-size: 0.85rem; }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .card { padding: 20px; }
     }
 
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }

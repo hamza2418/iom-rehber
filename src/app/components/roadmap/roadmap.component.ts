@@ -46,6 +46,28 @@ import { ContentService, Step } from '../../services/content.service';
 
     .title { margin-top: 0; color: #003366; }
     .detail-box { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 15px; font-size: 0.9rem; color: #555; display: flex; gap: 10px; }
+
+    @media (max-width: 768px) {
+      .timeline { padding: 10px 0; }
+      .timeline::before { left: 18px; width: 3px; }
+
+      .timeline-item { margin-bottom: 30px; padding-left: 50px; }
+
+      .timeline-marker {
+        width: 40px;
+        height: 40px;
+        line-height: 32px;
+        font-size: 1rem;
+        border-width: 3px;
+      }
+
+      .timeline-content { padding: 15px; }
+      .timeline-item:hover .timeline-content { transform: none; }
+
+      .title { font-size: 1.1rem; }
+      .description { font-size: 0.9rem; }
+      .detail-box { padding: 12px; font-size: 0.85rem; flex-direction: column; gap: 5px; }
+    }
   `]
 })
 export class RoadmapComponent implements OnInit {

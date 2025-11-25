@@ -167,6 +167,36 @@ import { CommonModule } from '@angular/common';
       background: #006699;
       transform: translateY(-2px);
     }
+
+    @media (max-width: 768px) {
+      .tips-container { padding: 0; }
+
+      .tip-card {
+        flex-direction: column;
+        padding: 20px 15px;
+        margin-bottom: 15px;
+      }
+
+      .tip-card .icon { font-size: 2rem; text-align: center; }
+      .tip-card h3 { font-size: 1.1rem; }
+      .tip-card p { font-size: 0.9rem; }
+
+      .step-box { padding: 12px; }
+      .step-box h4 { font-size: 1rem; }
+      .step-box ul { padding-left: 15px; }
+
+      .email-template {
+        padding: 10px;
+        font-size: 0.8rem;
+      }
+
+      .detail-link {
+        display: block;
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 0.9rem;
+      }
+    }
   `]
 })
 export class TipsComponent {}

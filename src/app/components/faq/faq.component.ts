@@ -40,6 +40,31 @@ import { ContentService, FaqItem } from '../../services/content.service';
     .answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #fafafa; border-top: 1px solid #f0f0f0; }
     .answer.show { padding: 20px; max-height: 500px; }
     .tag { display: inline-block; font-size: 0.8rem; background: #e9ecef; color: #666; padding: 2px 8px; border-radius: 4px; margin-top: 10px; }
+
+    @media (max-width: 768px) {
+      .faq-page { padding: 0; }
+
+      h2 { font-size: 1.5rem; }
+
+      .search-box input {
+        padding: 12px;
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+      }
+
+      .faq-card { margin-bottom: 12px; }
+
+      .question {
+        padding: 15px;
+        font-size: 0.95rem;
+        gap: 10px;
+      }
+
+      .toggle { font-size: 1.3rem; }
+
+      .answer { font-size: 0.9rem; }
+      .answer.show { padding: 15px; }
+    }
   `]
 })
 export class FaqComponent implements OnInit {
